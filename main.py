@@ -83,4 +83,4 @@ def transitively_defeat_pro(pro_player_id, depth_limit=10, api_key=None):
 
 
 graph=transitively_defeat_pro("pro_id",1,"api_key")
-
+print(graph)
