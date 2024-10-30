@@ -77,10 +77,11 @@ def transitively_defeat_pro(pro_player_id, depth_limit=10, api_key=None):
             # Small delay to avoid hitting API rate limits
             time.sleep(0.5)
 
-    return graph
+    return graph,visited
 
 
 
-
-graph=transitively_defeat_pro("pro_id",1,"api_key")
-print(graph)
+pro_id=123456
+graph,defeaters=transitively_defeat_pro(pro_id,1,"api_key")
+for defeater in defeaters:
+    print(defeater," transitively defeated pro player ",pro_id,"once!")

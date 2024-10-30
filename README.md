@@ -27,8 +27,8 @@ pro_player_id = 123456789
 api_key = 'YOUR_API_KEY'
 
 # Generate graph of players who transitively defeated the pro
-defeated_graph = transitively_defeat_pro(pro_player_id, depth_limit=10, api_key=api_key)
+defeated_graph,defeaters = transitively_defeat_pro(pro_player_id, depth_limit=10, api_key=api_key)
 
 # Display results
-for player, defeaters in defeated_graph.items():
-    print(f"Player {player} is defeated by: {defeaters}")
+for defeater in defeaters:
+    print(defeater," transitively defeated pro player ",pro_id,"once!")
