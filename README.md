@@ -8,7 +8,7 @@ This Python tool builds a web of transitive victories: if a pro loses to a playe
 
 ### 🔥 Features:
 - **Dynamic Graph Creation**: Track paths of defeat right back to your favorite pro players.
-- **Depth Control**: Specify how far back you want to trace victories, up to 10 levels deep.
+- **Depth Control**: Specify how far back you want to trace victories.
 - **Perfect for Dota 2 Fans**: Get bragging rights by proving your place in the pro-defeating hierarchy!
 
 ---
