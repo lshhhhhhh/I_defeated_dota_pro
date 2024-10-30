@@ -82,5 +82,5 @@ def transitively_defeat_pro(pro_player_id, depth_limit=10, api_key=None):
 
 
 
-graph=transitively_defeat_pro(115809748,1,"f8bdbc90-5e60-43e7-ba22-f85f85c62a63")
-print(graph)
+graph=transitively_defeat_pro("pro_id",1,"api_key")
+
